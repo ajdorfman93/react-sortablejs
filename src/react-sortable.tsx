@@ -3,6 +3,7 @@ import {
   Children,
   cloneElement,
   Component,
+  ComponentType,
   createElement,
   createRef,
   ReactElement,
@@ -42,7 +43,7 @@ export class ReactSortable<T extends ItemInterface> extends Component<
     clone: (item) => item,
   };
 
-  private ref: RefObject<HTMLElement>;
+  private ref: RefObject<HTMLElement | null>;
   constructor(props: ReactSortableProps<T>) {
     super(props);
     // @todo forward ref this component
@@ -80,12 +81,12 @@ Please read the updated README.md at https://github.com/SortableJS/react-sortabl
     }
   }
 
-  render(): JSX.Element {
+  render(): ReactElement {
     const { tag, style, className, id } = this.props;
     const classicProps = { style, className, id };
 
     // if no tag, default to a `div` element.
-    const newTag = !tag || tag === null ? "div" : tag;
+    const newTag = (!tag || tag === null ? "div" : tag) as ComponentType<any> | string;
     return createElement(
       newTag,
       {

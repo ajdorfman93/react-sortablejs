@@ -1,10 +1,4 @@
-import {
-  CSSProperties,
-  ForwardRefExoticComponent,
-  ReactHTML,
-  ReactNode,
-  RefAttributes,
-} from "react";
+import { CSSProperties, ComponentType, ReactNode } from "react";
 import Sortable, { MoveEvent, Options, SortableEvent } from "sortablejs";
 import { ReactSortable } from "./react-sortable";
 import { Omit } from "./util";
@@ -44,7 +38,7 @@ export interface ReactSortableProps<T>
    * forwardRef<HTMLElement, YOURPROPS>((props, ref) => <button {...props} ref={ref} />)
    */
   /* eslint-disable-next-line */
-  tag?: ForwardRefExoticComponent<RefAttributes<any>> | keyof ReactHTML;
+  tag?: ComponentType<any> | string;
   /**
    * If this is provided, the function will replace the clone in place.
    *
