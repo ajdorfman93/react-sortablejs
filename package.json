@@ -27,15 +27,15 @@
     "format:eslint": "yarn lint --fix",
     "format:prettier": "prettier --write \"src/**.{js,ts}\"",
     "lint": "eslint \"src/**.{js,ts}\"",
-    "phoenix": "rm -rf ./node_modules && rm -f yarn.lock && yarn install --prefer-online",
-    "postbuild": "node scripts/copy-types.js"
+    "phoenix": "rm -rf ./node_modules && rm -f yarn.lock && yarn install --prefer-online"
   },
   "peerDependencies": {
+    "@types/sortablejs": "1",
     "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "react-dom": ">=16.9.0",
+    "sortablejs": "1"
   },
   "dependencies": {
-    "@ajdorfman93/sortablejs": "^1.15.8",
     "classnames": "2.3.1",
     "tiny-invariant": "1.2.0"
   },
@@ -50,6 +50,7 @@
     "@types/node": "14.11.2",
     "@types/react": ">=16.9.0",
     "@types/react-dom": ">=16.9.0",
+    "@types/sortablejs": "1",
     "@typescript-eslint/eslint-plugin": "4.33",
     "@typescript-eslint/parser": "4.33",
     "commitizen": "4",
@@ -65,6 +66,7 @@
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0",
     "semantic-release": "17",
+    "sortablejs": "1",
     "ts-jest": "26",
     "ts-node": "9",
     "typescript": "4"
