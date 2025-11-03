@@ -1,13 +1,13 @@
 {
-  "name": "react-sortablejs",
+  "name": "@ajdorfman/react-sortablejs",
   "version": "6.1.5",
   "author": {
-    "name": "Wayne Van Son",
-    "email": "waynevanson@gmail.com"
+    "name": "Citron",
+    "email": "info@citron.one"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SortableJS/react-sortablejs.git"
+    "url": "https://github.com/ajdorfman93/react-sortablejs.git"
   },
   "license": "MIT",
   "private": false,
