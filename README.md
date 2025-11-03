@@ -13,11 +13,11 @@ Please note that this is not considered ready for production, as there are still
 `sortablejs` and `@types/sortablejs` are peer dependencies. The latter is only used if intellisense/typescript is desired.
 
 ```shell
-npm install --save react-sortablejs sortablejs
+npm install --save @ajdorfman93/react-sortablejs sortablejs
 npm install --save-dev @types/sortablejs
 
 # OR
-yarn add react-sortablejs sortablejs
+yarn add @ajdorfman93/react-sortablejs sortablejs
 yarn add -D @types/sortablejs
 ```
 
@@ -26,7 +26,7 @@ yarn add -D @types/sortablejs
 Here is the TLDR of what sortable is:
 
 ```md
-- Shopping List: # list of items / sortable. This represents `react-sortablejs`
+- Shopping List: # list of items / sortable. This represents `@ajdorfman93/react-sortablejs`
   - eggs # list item. These are all the items in the list and are what you move around.
   - bread # list item
   - milk # list item
@@ -38,7 +38,7 @@ Here is the TLDR of what sortable is:
 
 ```tsx
 import React, { FC, useState } from "react";
-import { ReactSortable } from "react-sortablejs";
+import { ReactSortable } from "@ajdorfman93/react-sortablejs";
 
 interface ItemType {
   id: number;
@@ -65,7 +65,7 @@ export const BasicFunction: FC = (props) => {
 
 ```tsx
 import React, { Component } from "react";
-import { ReactSortable } from "react-sortablejs";
+import { ReactSortable } from "@ajdorfman93/react-sortablejs";
 
 interface BasicClassState {
   list: { id: string; name: string }[];
@@ -104,7 +104,7 @@ You must mount the plugin with sortable **ONCE ONLY**.
 
 ```tsx
 import React from "react";
-import { ReactSortable, Sortable, MultiDrag, Swap } from "react-sortablejs";
+import { ReactSortable, Sortable, MultiDrag, Swap } from "@ajdorfman93/react-sortablejs";
 
 // mount whatever plugins you'd like to. These are the only current options.
 Sortable.mount(new MultiDrag(), new Swap());
@@ -148,7 +148,7 @@ Sortable.create(element, {
 // --------------------------
 
 import React from "react";
-import { ReactSortable } from "react-sortablejs";
+import { ReactSortable } from "@ajdorfman93/react-sortablejs";
 
 const App = () => {
   const [state, setState] = useState([
@@ -222,7 +222,7 @@ Just add the string and ReactSortable will use a `ul` instead of a `div`.
 
 ```tsx
 import React, { FC, useState } from "react";
-import { ReactSortable } from "react-sortablejs";
+import { ReactSortable } from "@ajdorfman93/react-sortablejs";
 
 export const BasicFunction: FC = (props) => {
   const [state, setState] = useState([{ id: "1", name: "shrek" }]);
@@ -249,7 +249,7 @@ If it doesn't have one, you can add one using `React.forwardRef()`.
 
 ```tsx
 import React, { FC, useState, forwardRef } from "react";
-import { ReactSortable } from "react-sortablejs";
+import { ReactSortable } from "@ajdorfman93/react-sortablejs";
 
 // This is just like a normal component, but now has a ref.
 const CustomComponent = forwardRef<HTMLDivElement, any>((props, ref) => {

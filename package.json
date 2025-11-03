@@ -32,10 +32,10 @@
   "peerDependencies": {
     "@types/sortablejs": "1",
     "react": ">=16.9.0",
-    "react-dom": ">=16.9.0",
-    "sortablejs": "1"
+    "react-dom": ">=16.9.0"
   },
   "dependencies": {
+    "@ajdorfman93/sortablejs": "^1.15.6",
     "classnames": "2.3.1",
     "tiny-invariant": "1.2.0"
   },
@@ -66,7 +66,6 @@
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0",
     "semantic-release": "17",
-    "sortablejs": "1",
     "ts-jest": "26",
     "ts-node": "9",
     "typescript": "4"

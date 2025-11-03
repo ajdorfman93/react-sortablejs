@@ -64,7 +64,7 @@ export class ReactSortable<T extends ItemInterface> extends Component<
       `
 Plugins prop is no longer supported.
 Instead, mount it with "Sortable.mount(new MultiDrag())"
-Please read the updated README.md at https://github.com/SortableJS/react-sortablejs.
+Please read the updated README.md at https://github.com/ajdorfman93/react-sortablejs.
       `
     );
   }
