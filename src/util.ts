@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import Sortable, { Options } from "sortablejs";
+import Sortable, { Options } from "@ajdorfman93/sortablejs";
 import { MultiDragEvent } from "./react-sortable";
 import { AllMethodNames, ItemInterface, ReactSortableProps } from "./types";
 

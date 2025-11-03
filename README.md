@@ -12,6 +12,11 @@ Please note that this is not considered ready for production, as there are still
 
 `sortablejs` and `@types/sortablejs` are peer dependencies. The latter is only used if intellisense/typescript is desired.
 
+Publish to NPM:
+```bash
+npm publish --access public
+```
+
 ```shell
 npm install --save @ajdorfman93/react-sortablejs sortablejs
 npm install --save-dev @types/sortablejs
@@ -305,3 +310,5 @@ We don't have anything that works 100%, but here I'd like to spitball some poten
 
 - Use `onMove` to handle state changes instead of `onAdd`,`onRemove`, etc.
 - Create a Sortable plugin specifically for react-sortbalejs
+
+

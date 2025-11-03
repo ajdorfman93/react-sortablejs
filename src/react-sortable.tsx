@@ -9,7 +9,7 @@ import {
   ReactElement,
   RefObject,
 } from "react";
-import Sortable, { MoveEvent, Options, SortableEvent } from "sortablejs";
+import Sortable, { MoveEvent, Options, SortableEvent } from "@ajdorfman93/sortablejs";
 import invariant from "tiny-invariant";
 import {
   AllMethodsExceptMove,

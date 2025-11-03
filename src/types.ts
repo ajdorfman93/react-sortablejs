@@ -1,5 +1,5 @@
 import { CSSProperties, ComponentType, ReactNode } from "react";
-import Sortable, { MoveEvent, Options, SortableEvent } from "sortablejs";
+import Sortable, { MoveEvent, Options, SortableEvent } from "@ajdorfman93/sortablejs";
 import { ReactSortable } from "./react-sortable";
 import { Omit } from "./util";
 
