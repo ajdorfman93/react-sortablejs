@@ -35,7 +35,7 @@
     "react-dom": ">=16.9.0"
   },
   "dependencies": {
-    "@ajdorfman93/sortablejs": "^1.15.6",
+    "@ajdorfman93/sortablejs": "^1.15.8",
     "classnames": "2.3.1",
     "tiny-invariant": "1.2.0"
   },
